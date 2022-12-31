@@ -10,6 +10,16 @@ green(){
     echo -e "\033[32m\033[01m$1\033[0m"
 }
 
+echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.forwarding=1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.all.forwarding=1" >> /etc/sysctl.conf
+echo "net.ipv4.conf.default.rp_filter=0" >> /etc/sysctl.conf
+echo "net.ipv4.conf.all.rp_filter=0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.all.disable_ipv6 = 0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.lo.disable_ipv6 = 0" >> /etc/sysctl.conf
+sysctl -p
+
 #add source
 echo 'deb http://deb.debian.org/debian buster-backports main' >>  /etc/apt/sources.list
 
