@@ -6,13 +6,13 @@
     {
       "address": "54.185.77.141",
       "port": 53,
-      "domains": ["geosite:dazn"
-                  "geosite:amazon"
-                  "geosite:hbo"
-                  "geosite:disney"
-                  "geosite:netflix"
-                  "geosite:fox"
-                  "geosite:espn"
+      "domains": ["geosite:dazn",
+                  "geosite:amazon",
+                  "geosite:hbo",
+                  "geosite:disney",
+                  "geosite:netflix",
+                  "geosite:fox",
+                  "geosite:espn",
                   "geosite:fox"
       ]
     }
